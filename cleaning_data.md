@@ -1,5 +1,11 @@
 What issues will you address by cleaning the data?
-The issues to address by cleaning the data are to make the data more user-friendly, readable, and efficient to work with.
+The issues to address by cleaning the data are to make the data more user-friendly, usable, and efficient to work with.
+
+Broadly speaking, these were the Data cleaning techniques which I applied:
+Missing values - for example, removing NULL entries)
+Removing Anamolies - example, removing outliers
+Removing duplicates
+Data relevance - ensuring that the fields are relevant
 
 1. From table analytics, to divide the unit price by 1,000,000
    Query used:
