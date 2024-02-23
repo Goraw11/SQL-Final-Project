@@ -5,10 +5,19 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 
 SQL Queries:
+SELECT
+  city,
+  country,
+  SUM(totaltransactionrevenue) AS total_revenue
+FROM all_sessions
+WHERE totaltransactionrevenue IS NOT NULL
+  AND city != 'Unknown'
+GROUP BY city, country
+ORDER BY total_revenue DESC;
 
-
-
-Answer:
+Answer: 
+Based on the above query, we see USA is the highest spender on this website.
+6 out of the top 7 spenders are cities in the USA - 6th highest spender being Tel Aviv in Israel.
 
 
 
