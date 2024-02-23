@@ -62,7 +62,13 @@ Answer:
 
 
 
+Self-Generated questions:
+1. What products are ordered the most:
+   Code: select *
+from sales_report
+order by total_ordered DESC
 
+2. 
 
 
 
