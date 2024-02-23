@@ -26,11 +26,20 @@ Based on the above query, we see USA is the highest spender on this website.
 
 
 SQL Queries:
+SELECT
+  city,
+  country,
+  AVG(totaltransactionrevenue) AS avg_products_ordered
+FROM all_sessions
+GROUP BY city, country;
 
 
 
 Answer:
-
+We see that top 3 cities where the products were sold were as follows:
+San Francisco
+Kharagpur
+Stanford
 
 
 
