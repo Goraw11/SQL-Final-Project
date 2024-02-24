@@ -7,6 +7,9 @@ Removing Anamolies - example, removing outliers
 Removing duplicates
 Data relevance - ensuring that the fields are relevant
 
+Queries:
+Below, provide the SQL queries you used to clean your data.
+
 1. From table analytics, to divide the unit price by 1,000,000
    Query used:
    SELECT unit_price / 1000000.0 AS result
@@ -14,6 +17,3 @@ FROM analytics;
 
 
 
-
-Queries:
-Below, provide the SQL queries you used to clean your data.
