@@ -1,4 +1,4 @@
-Question 1: 
+Question 1: Show top 10 cities where most the customers live
 
 SQL Queries:
 
