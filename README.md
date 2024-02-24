@@ -1,17 +1,23 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-(fill in your description and goals here)
+
+This data shows sales related information for a company, including how their clients interacted with them on their website.
 
 ## Process
-### (your step 1)
-### (your step 2)
+
+In this project, I have:
+Imported the csv files into a database called ecommerce
+After this, I:
+        Reviewed the data
+        conducted some data cleaning and scrubbing
+        Answered the required questions.
 
 ## Results
-(fill in what you discovered this data could tell you and how you used the data to answer those questions)
+This data gave me some insights regarding the current sales of the company.
 
 ## Challenges 
-(discuss challenges you faced in the project)
+I felt that there a lot of insights that can be derived from this data.
 
 ## Future Goals
-(what would you do if you had more time?)
+I would spend more time scrubbing the data, getting more insights, and learning further.
