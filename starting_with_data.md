@@ -1,17 +1,17 @@
-Question 1: Show top 10 cities where most the customers live
+Self-Generated questions:
+
+1. Show top 10 cities where most customers live
 
 SQL Queries:
 
 Answer: 
 
 
-
-Question 2: 
+Question 2: What products are ordered the most:
 
 SQL Queries:
 
 Answer:
-
 
 
 Question 3: 
