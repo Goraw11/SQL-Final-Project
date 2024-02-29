@@ -5,6 +5,7 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 
 SQL Queries:
+```SQL
 SELECT
   city,
   country,
@@ -14,6 +15,7 @@ WHERE totaltransactionrevenue IS NOT NULL
   AND city != 'Unknown'
 GROUP BY city, country
 ORDER BY total_revenue DESC;
+```
 
 Answer: 
 Based on the above query, we see USA is the highest spender on this website.
