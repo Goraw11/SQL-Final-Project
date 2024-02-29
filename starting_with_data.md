@@ -75,8 +75,20 @@ Here's a list of the top 5 cities with less than 5 customers each.
 5. Maracaibo	4
 
 
-Question 5: Show a list of top 5 items with the highest sentiment scores.
+Question 5: Which products are taking the longest time to restock, show 5 products taking the most time to resctock? [The company can use this information to get in touch with the suppliers and set up solutions in order to procure and sell those items faster]
 
 Query:
+```SQL
+SELECT "product_name", MAX("restocking_leadtime") AS "MaxRestockingLeadTime"
+FROM "products"
+GROUP BY "product_name"
+ORDER BY "MaxRestockingLeadTime" DESC
+limit 5
+```
 
-Answer:
+Answer: There are several products that take considerable amount of time to restock, however, here's a list of 5 that takes the longest.
+1. Cam Indoor Security Camera - USA	42
+2. Recycled Mouse Pad	39
+3. Stylus Pen w/ LED Light	39
+4. Leatherette Journal	36
+5. Gunmetal Roller Ball Pen	36
