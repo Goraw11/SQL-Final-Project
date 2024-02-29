@@ -68,11 +68,11 @@ ORDER BY "CustomerCount" DESC;
 Answer:
 This shows us a list of over 156 cities! The company can save a lot by reducing their marketing spend in these cities, and save on shipping costs. The company may also consider to altogether stop selling in these geographies.
 Here's a list of the top 5 cities with less than 5 customers each.
-Karachi	4
-Pozuelo de Alarcon	4
-Riyadh	4
-Zhongli District 4
-Maracaibo	4
+1. Karachi	4
+2. Pozuelo de Alarcon	4
+3. Riyadh	4
+4. Zhongli District 4
+5. Maracaibo	4
 
 
 Question 5: Show a list of top 5 items with the highest sentiment scores.
