@@ -28,7 +28,7 @@ Based on the above query, we see USA is the highest spender on this website.
 
 
 SQL Queries:
-```
+```SQL
 SELECT
   city,
   country,
