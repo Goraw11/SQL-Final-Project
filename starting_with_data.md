@@ -19,7 +19,7 @@ Answer:
 5. Sunnyvale
 
 
-Question 2: Show a list of items with more than 5000 units in the warehouse. We can use this data to offer offer any sales or discounts on these items to incentivize customers to purchase them. We can do this to free up warehouse space to stock up on items which generate most revenue.
+Question 2: Show a list of items with more than 5000 units in the warehouse. [The company can use this data to offer offer any sales or discounts on these items to incentivize customers to purchase them. We can do this to free up warehouse space to stock up on items which generate most revenue.]
 
 Query:
 ```SQL
@@ -54,12 +54,25 @@ This company has several items which receive amazing reviews from it's customers
 5. Men's Short Sleeve Hero Tee Charcoal
 
 
-Question 4: Customers spend most time looking at which items on the website?
+Question 4: Show a list of cities which have less than 5 customers. [The company may use this information to reduce their marketing spend in these cities, as, they already do not have many customers this. This would also help to reduce shipping costs for the company]
 
 Query:
+```SQL
+SELECT "city", COUNT("fullvisitorid") AS "CustomerCount"
+FROM "all_sessions"
+GROUP BY "city"
+HAVING COUNT("fullvisitorid") < 5
+ORDER BY "CustomerCount" DESC;
+```
 
 Answer:
-
+This shows us a list of over 156 cities! The company can save a lot by reducing their marketing spend in these cities, and save on shipping costs. The company may also consider to altogether stop selling in these geographies.
+Here's a list of the top 5 cities with less than 5 customers each.
+"Karachi"	4
+"Pozuelo de Alarcon"	4
+"Riyadh"	4
+"Zhongli District"	4
+"Maracaibo"	4
 
 
 Question 5: Show a list of top 5 items with the highest sentiment scores.
