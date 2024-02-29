@@ -87,8 +87,8 @@ limit 5
 ```
 
 Answer: There are several products that take considerable amount of time to restock, however, here's a list of 5 that takes the longest.
-1. Cam Indoor Security Camera - USA	42
-2. Recycled Mouse Pad	39
-3. Stylus Pen w/ LED Light	39
-4. Leatherette Journal	36
-5. Gunmetal Roller Ball Pen	36
+1. Cam Indoor Security Camera - USA	42 days
+2. Recycled Mouse Pad	39 days
+3. Stylus Pen w/ LED Light	39 days
+4. Leatherette Journal	36 days
+5. Gunmetal Roller Ball Pen	36 days
