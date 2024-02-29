@@ -12,11 +12,22 @@ LIMIT 5;
 ```
 
 Answer: 
+1. Name not available
+2. Mountain View
+3. New York
+4. San Fransisco
+5. Sunnyvale
 
 
-Question 2: What colour t-shirt is ordered the most?
+Question 2: Show a list of items with more than 5000 units in the warehouse. We can use this data to offer offer any sales or discounts on these items to incentivize customers to purchase them. We can do this to free up warehouse space to stock up on items which generate most revenue.
 
 Query:
+```SQL
+SELECT "name", "stocklevel"
+FROM "sales_report"
+WHERE "stocklevel" > 5000 
+order by "stocklevel" DESC;
+```
 
 Answer:
 
