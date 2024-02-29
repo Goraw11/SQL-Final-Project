@@ -30,14 +30,28 @@ order by "stocklevel" DESC;
 ```
 
 Answer:
+We see that we have several thousand quanities of the below 3 items:
+22 oz Water Bottle
+Sunglasses
+Spiral Notebook and Pen Set
 
-
-Question 3: Customers from which countries spend the most time on the website?
+Question 3: Show top 5 best-rated products
 
 Query:
+```SQL
+SELECT sentimentscore, total_ordered, name
+FROM "sales_report"
+ORDER BY "sentimentscore" DESC
+LIMIT 5;
+```
 
 Answer:
-
+This company has several items which receive amazing reviews from it's customers, however, here's the top 5 products which receive the best ratings:
+1. Recycled Paper Journal Set
+2. Stylus Pen w/LED Light
+3. Men's 100% Cotton Short Sleeve Hero Tee White
+4. Metal Texture Roller Pen
+5. Men's Short Sleeve Hero Tee Charcoal
 
 
 Question 4: Customers spend most time looking at which items on the website?
