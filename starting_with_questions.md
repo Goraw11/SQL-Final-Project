@@ -28,13 +28,14 @@ Based on the above query, we see USA is the highest spender on this website.
 
 
 SQL Queries:
+```
 SELECT
   city,
   country,
   AVG(totaltransactionrevenue) AS avg_products_ordered
 FROM all_sessions
 GROUP BY city, country;
-
+```
 
 
 Answer:
