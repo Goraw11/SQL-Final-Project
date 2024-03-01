@@ -64,8 +64,22 @@ WHERE (visitId) IN
     HAVING COUNT(*) > 1)
 ```
 
+4. Data relevance - ensuring that the fields are relevant
+We see that there are several fields that have
+a) no values attached to them (NULL)
+and,
+b) seem to be irrelevent (combined with the fact that they're emply (NULL) to begin with.
+I employed the following query to remove these columns:
+"itemQuantity"
 
-5. Data relevance - ensuring that the fields are relevant
+```SQL
+ALTER TABLE all_sessions
+DROP COLUMN itemQuantity;
+```
+"transactionId"
+```SQL
+ALTER TABLE all_sessions
+DROP COLUMN transactionId;
 
 
 One of the pre-set data cleaning, which was provided in this project, was, from table "analytics", to divide the unit price by 1,000,000
