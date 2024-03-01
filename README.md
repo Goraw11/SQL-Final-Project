@@ -38,11 +38,25 @@ My recommendation would be to have a plan where they either stop selling to thes
 
 This query shows cities with the most customers:
 ```SQL
-
+SELECT "city", COUNT("fullvisitorid") AS "CustomerCount"
+FROM "all_sessions"
+GROUP BY "city"
+ORDER BY "CustomerCount" DESC
+LIMIT 5;
+```
 
 
 ## Challenges 
-I felt that there a lot of insights that can be derived from this data.
+There were a lot of challenges on this project:
+1. Being my first SQL project, I had a lot of new learning.
+2. Getting used to the tools, including to github.
+3. Converting data from csv to PGAdmin seemed like a challenging task until I figured out how to do it.
+4. Cleaning the data and to figure out what NOT to remove (As it may be relevant).
+5. Scrubbing the data to figure out what's important.
 
 ## Future Goals
-I would spend more time scrubbing the data, getting more insights, and learning further.
+If I had more time with this data, I would look for more ways for the company to:
+1. Save money (streamlining shipping, reducing marketing spend on low-perforing markets, etc.)
+2. Save time by becoming efficient.
+3. Add convenience to their customers by figuring out ways to make shopping on their e-commerce site even easier.
+4. Finding opportunities to cross-sell to those customers who spend a lot of time the company website.
