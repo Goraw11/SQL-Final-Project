@@ -24,7 +24,18 @@ IS NOT NULL;
 ```
 The above query shows us that out of the 15133 fields, 0 fields have a value in the productRefundAmount column. We do not know if we need to assume, that absolutely no customers ever asked for a refund (extremely unlikely), or, if the data is just entirely missing. Either way, this can limit us from making important business decisions.
 
+
 Inconsistencies of standardization
+There were also a lot of inconsistencies in the data.
+For example, a simple field, productSKU, should be uniform in terms of the total number of charecters, and it's format (for example ABC123456). Here, neither the lenght, nor the format was uniform.
+```SQL
+SELECT MIN(LENGTH(productSKU)) AS min_length,
+       MAX(LENGTH(productSKU)) AS max_length
+FROM all_sessions
+WHERE productSKU IS NOT NULL;
+```
+We suspect that this could be because of a entry error or some type of human error. Either way, this data doesn't help us derive a lot of understanding, as it's inconsisten.
+
 
 The issues to address by cleaning the data are to make the data more user-friendly, usable, and efficient to work with.
 
