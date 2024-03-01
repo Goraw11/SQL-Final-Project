@@ -1,5 +1,8 @@
 What are your risk areas? Identify and describe them.
 
+Duplicates ...
+
+
 We have several areas of risk in this data:
 1. Current sales trends: What kind of impacts can these current sales trends have on the company, specifially on the logitstics, the supply-chain of the company.
 
