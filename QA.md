@@ -40,18 +40,5 @@ IS NOT NULL;
 ```
 This again tends to be a risk, as, we do not know if the entries were made erroneously, or, are intentionally that way.
 
-We have several areas of risk in this data:
-1. Current sales trends: What kind of impacts can these current sales trends have on the company, specifially on the logitstics, the supply-chain of the company.
+In summary, it is crucial to understand the limitations, errors, duplications, NULL values etc. before you start working with your data. This will enable you to make educated decisions based on the data you have access to.
 
-2. What kind of impact can these current trends have on our manufacturing and operations, and how can we mitigae those risks.
-
-3. 
-
-QA Process:
-Describe your QA process and include the SQL queries used to execute it.
-From the table analytics, to divide the unit price by 1,000,000 
-Query used: 
-```SQL
-SELECT unit_price / 1000000.0 
-AS result FROM analytics;
-```
