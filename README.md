@@ -25,6 +25,20 @@ b. Conducted data cleaning and scrubbing by employing various queries (I've prov
 
 ## Results
 Based on my queries, I see that this company does business all over the world. This also means that the marketing spend goes globally. One of my questions was, which cities have the lowest number of customers.
+```SQL
+SELECT "city", COUNT("fullvisitorid") AS "CustomerCount"
+FROM "all_sessions"
+GROUP BY "city"
+HAVING COUNT("fullvisitorid") < 5
+ORDER BY "CustomerCount" DESC;
+```
+
+This query returns over 150 cities where they have fewer than 5 customers. 
+My recommendation would be to have a plan where they either stop selling to these cities, thus hugely saving on the marketing spend and shipping costs for those areas, or, to have some plan in place. With limited resources and a focus on growth, the company should focus on cities where they have most customers.
+
+This query shows cities with the most customers:
+```SQL
+
 
 
 ## Challenges 
