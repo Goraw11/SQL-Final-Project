@@ -76,11 +76,12 @@ I employed the following query to remove these columns:
 ALTER TABLE all_sessions
 DROP COLUMN itemQuantity;
 ```
+
 "transactionId"
 ```SQL
 ALTER TABLE all_sessions
 DROP COLUMN transactionId;
-
+```
 
 One of the pre-set data cleaning, which was provided in this project, was, from table "analytics", to divide the unit price by 1,000,000
 I have applied the below query to solve for this:
