@@ -32,7 +32,13 @@ c. Were alphanumeric
 D. Only had numbers
 
 In this example query, we can see the minimum and maximum charecter lenght:
-
+```SQL
+SELECT *
+FROM all_sessions
+WHERE productRefundAmount
+IS NOT NULL;
+```
+This again tends to be a risk, as, we do not know if the entries were made erroneously, or, are intentionally that way.
 
 We have several areas of risk in this data:
 1. Current sales trends: What kind of impacts can these current sales trends have on the company, specifially on the logitstics, the supply-chain of the company.
