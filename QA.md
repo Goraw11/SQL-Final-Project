@@ -12,7 +12,10 @@ However, we have to consider the risks:
 This will remove the entire row, which obviously has lots of other data in other cells. As such, by removing 1 column of NULL values over hundreds of rows, we risk loosing hundreds of important values - we must do this extremely carefully, and, only if 100% confident that we won't loose other relavant data.
 
 
-Duplicates ...
+2. Duplicates
+We can easily remove all duplicates, in all columns, with easy query such as this one:
+```SQL
+
 
 
 We have several areas of risk in this data:
