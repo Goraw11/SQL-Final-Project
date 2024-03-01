@@ -43,7 +43,7 @@ FROM all_sessions;
 We suspect that this could be because of a entry error or some type of human error. Either way, this data doesn't help us derive a lot of understanding, as it's inconsisten.
 
 3. Removing duplicates
-I used the below query to remove duplicates from the fullVisitorId column. [This removed over 900 duplicate entries]
+I used the below query to remove duplicates from the 'fullVisitorId' column. [This removed over 900 duplicate entries]
 ```SQL
 DELETE FROM all_sessions
 WHERE (fullVisitorId) IN 
@@ -52,6 +52,18 @@ WHERE (fullVisitorId) IN
     GROUP BY fullVisitorId
     HAVING COUNT(*) > 1)
 ```
+
+Similarly, I used the below query in the column 'visitId' in order to remove duplicates from that column. [This removed 8 duplicate entries] 
+```SQL
+DELETE 
+FROM all_sessions
+WHERE (visitId) IN 
+(SELECT visitId
+    FROM all_sessions
+    GROUP BY visitId
+    HAVING COUNT(*) > 1)
+```
+
 
 5. Data relevance - ensuring that the fields are relevant
 
