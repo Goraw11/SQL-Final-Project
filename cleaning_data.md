@@ -15,6 +15,15 @@ IS NOT NULL;
 
 How much $$$ the company made in terms of transaction revenue is a very important piece of data, however, running the above query, we see that out of 15133 fields, only 81 have a value attached in "totalTransactionRevenue" - this limits our understanding of total transaction revenue almost to a negligible level.
 
+Another example is the productRefundAmount field.
+```SQL
+SELECT *
+FROM all_sessions
+WHERE productRefundAmount
+IS NOT NULL;
+```
+The above query shows us that out of the 15133 fields, 0 fields have a value in the productRefundAmount column. We do not know if we need to assume, that absolutely no customers ever asked for a refund (extremely unlikely), or, if the data is just entirely missing. Either way, this can limit us from making important business decisions.
+
 Inconsistencies of standardization
 
 The issues to address by cleaning the data are to make the data more user-friendly, usable, and efficient to work with.
